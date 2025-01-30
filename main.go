@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/abtsousa/minimax-go"
 	ttt "github.com/abtsousa/tictacgo/internal/tictactoe"
-	"github.com/abtsousa/tictacgo/minimax"
 )
 
 func main() {
@@ -112,7 +112,7 @@ func playGame() {
 		} else {
 			// AI's turn (O)
 			fmt.Println("AI's turn (O)...")
-			currentState = game.GetBestMove(*currentState)
+			currentState = game.Solve(*currentState)
 		}
 	}
 
