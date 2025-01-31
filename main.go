@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/abtsousa/minimax-go"
-	ttt "github.com/abtsousa/tictacgo/internal/tictactoe"
+	ttt "github.com/abtsousa/tictacgo/tictactoe"
 )
 
 func main() {
